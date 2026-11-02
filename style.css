@@ -1,0 +1,1269 @@
+
+/* =========================
+   تنظیمات عمومی
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F4F6;
+    font-family: Arial, sans-serif;
+    color: #263238;
+    line-height: 1.7;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+.letter {
+    color: #B22222;
+}
+
+
+/* =========================
+   هدر سایت
+========================= */
+
+header {
+    background-color: #1D3555;
+    color: white;
+    padding: 20px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top {
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    
+}
+
+
+
+
+.search {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.search input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.site-logo {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    transform:none;
+    color: white;
+    font-size: 25px;
+    direction: ltr;
+    margin: 0;
+    
+
+
+}
+
+.login {
+    position: absolute;
+    right: 15px;
+    top:15px;
+    transform: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #B22222;
+    border-radius: 5px;
+    background-color: #B22222;
+    padding: 8px 15px;
+    white-space: nowrap;
+  
+    z-index: 2;
+} 
+
+
+.login:hover {
+    background-color: #8e1b1b;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+}
+
+.login a:hover,
+.logout-button:hover {
+    color: #eeeeee;
+}
+
+.login span {
+    color: white;
+}
+
+.login form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.logout-button {
+    display: inline;
+    background: none;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    direction: ltr;
+   
+    justify-content: center;
+
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ddd;
+}
+
+
+/* =========================
+   بخش هیرو
+========================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 60px;
+    margin: 30px 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #B22222;
+}
+
+.hero-text p {
+    font-size: 22px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #B22222;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   کارت های دوره
+========================= */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #B22222;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   مقالات و بخش های عمومی
+========================= */
+
+.latest {
+    padding: 40px;
+}
+
+.latest > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.article {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.article:hover {
+    transform: translateY(-8px);
+}
+
+.article-image {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.article h3 {
+    margin-bottom: 12px;
+}
+
+.article p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.article a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #B22222;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   صفحه موضوع واژگان
+========================= */
+
+.vocabulary-page {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+
+/* عنوان موضوع */
+
+.vocabulary-heading {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 0 auto 35px;
+    padding: 38px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f0f3f8);
+    border: 1px solid #e4e8ef;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px rgba(29, 53, 85, 0.06);
+} 
+
+ .vocabulary-label {
+    display: block;
+    color: #B22222;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    direction: ltr;
+    margin-bottom: 10px;
+} 
+
+.vocabulary-heading .topic-title {
+    display: block;
+    position: static;
+    float: none;
+    width: 100%;
+    margin: 8px auto 12px;
+    text-align: center !important;
+    color: #1D3555;
+    font-size: 34px;
+    line-height: 1.4;
+} 
+
+.topic-description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #626b78;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.9;
+} 
+
+.heading-decoration {
+    width: 55px;
+    height: 4px;
+    background-color: #B22222;
+    border-radius: 10px;
+    margin: 20px auto;
+} 
+
+.back-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #1D3555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #B22222;
+} 
+
+
+/* شبکه فلش کارت ها */
+
+.vocabulary-cards-section {
+    display: block;
+    width: 100%;
+}
+
+.vocabulary-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 25px;
+    align-items: stretch;
+}
+
+
+/* هر فلش کارت */
+
+.vocabulary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    padding: 18px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #e8eaf0;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(29, 53, 85, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vocabulary-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(29, 53, 85, 0.15);
+}
+
+
+
+
+
+
+.vocabulary-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+
+
+.vocabulary-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 175px;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    font-size: 45px;
+}
+
+.vocabulary-word {
+    display: block;
+    width: 100%;
+    margin: 18px 0 10px;
+    color: #1D3555;
+    font-size: 21px;
+    text-align: center;
+    direction: ltr;
+    overflow-wrap: anywhere;
+}
+
+
+/* دکمه صدا */
+
+.audio-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    margin-top: auto;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #1D3555;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.audio-button:hover {
+    background-color: #B22222;
+    transform: scale(1.08);
+}
+
+.audio-icon {
+    line-height: 1;
+}
+
+
+/* حالت بدون واژه */
+
+.empty-vocabulary {
+    grid-column: 1 / -1;
+    padding: 45px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 18px;
+    color: #626b78;
+}
+
+.empty-vocabulary span {
+    font-size: 42px;
+}
+
+.empty-vocabulary h2 {
+    margin: 12px 0;
+    color: #1D3555;
+    font-size: 22px;
+}
+
+.empty-vocabulary p {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.article-detail {
+    padding: 50px 20px;
+    direction: rtl;
+}
+
+.article-detail-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    line-height: 2;
+}
+
+.article-detail h1 {
+    color: #B22222;
+    margin: 25px 0;
+}
+
+.article-meta {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.article-detail-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.article-excerpt {
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.article-content {
+    font-size: 17px;
+    line-height: 2.2;
+    white-space: normal;
+    direction: rtl;
+}
+
+.back-link {
+    color: #B22222;
+    text-decoration: none;
+}
+
+
+
+   /* فوتر
+========================= */ 
+.footer {
+    background-color: #1D3555;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 40px;
+    padding: 50px 60px;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-box p {
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.footer-box a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    color: white;
+    transform: translateX(-5px);
+}
+
+.footer .letter {
+    color:#B22222;
+    font-size: x-large;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff33;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #ccc;
+}
+
+
+   /* تبلت
+========================= */ 
+
+@media (max-width: 1000px) {
+
+    .courses {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .vocabulary-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .footer-container {
+        gap: 25px;
+        padding: 40px;
+    }
+}
+
+
+/* =========================
+   موبایل
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .top {
+        height: auto;
+        min-height: 50px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top .site-logo {
+        position: static;
+        order: 1;
+        text-align: center;
+    }
+
+    .top .search {
+        width: 100%;
+        order: 2;
+    }
+
+    .top .login {
+        position: static;
+        order: 3;
+    }
+
+    .nav {
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 20px;
+        padding: 40px 25px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
+    .latest {
+        padding: 20px;
+    }
+
+    .vocabulary-page {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .vocabulary-heading {
+        padding: 28px 15px;
+        margin-bottom: 25px;
+    }
+
+    .vocabulary-heading .topic-title {
+        font-size: 27px;
+    }
+
+    .topic-description {
+        font-size: 14px;
+    }
+
+    .vocabulary-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .vocabulary-card {
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .vocabulary-card-image,
+    .vocabulary-image-placeholder {
+        height: 135px;
+    }
+
+    .vocabulary-word {
+        font-size: 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 40px 25px;
+        gap: 30px;
+    }
+}
+
+
+   /* موبایل کوچک
+========================= */ 
+
+@media (max-width: 400px) {
+
+    .vocabulary-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .vocabulary-card-image,
+    .vocabulary-image-placeholder {
+        height: 190px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* تنظیم عنوان صفحه واژگان */
+.vocabulary-heading {
+    text-align: center;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.topic-title {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.heading-decoration {
+    margin: 15px auto;
+}
+
+.vocabulary-cards-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.vocabulary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .vocabulary-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .vocabulary-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* دکمه‌های صفحه قبل و بعد */
+.topic-pagination {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #1D3555;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-link:hover {
+    background-color: #B22222;
+}
+
+.pagination-link span {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .topic-pagination {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .pagination-link {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/* شماره صفحه‌ها */
+.page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    direction: ltr;
+}
+
+.page-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9dee7;
+    border-radius: 8px;
+    background-color: white;
+    color: #1D3555;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.page-number:hover,
+.page-number.active {
+    background-color: #1D3555;
+    color: white;
+    border-color: #1D3555;
+}
+
+.page-dots {
+    color: #777;
+    padding: 0 3px;
+}
+
+@media (max-width: 600px) {
+    .topic-pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-numbers {
+        order: -1;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+.top .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top .user-actions form {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top .user-actions .logout-btn {
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* اصلاح چیدمان خوش‌آمدگویی و خروج */
+
+.top .user-actions {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top .user-actions .login {
+    position: static;
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.top .user-actions form {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top .user-actions .logout-btn {
+    font-size: 14px;
+}
+
+/* نمایش مرتب در موبایل */
+@media (max-width: 700px) {
+    .top .user-actions {
+        position: static;
+        transform: none;
+        order: 3;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.top .user-actions a.login {
+    position: static;
+}
+
+
+
+
+
+.profile-edit {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #F3F4F6;
+    border-radius: 10px;
+}
+
+.profile-edit h2 {
+    color:#1D3555 ;
+    margin-bottom: 20px;
+}
+
+.profile-edit .form-group {
+    margin-bottom: 18px;
+}
+
+.profile-edit label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.profile-edit input,
+.profile-edit select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.profile-edit .save-profile {
+    padding: 10px 20px;
+    background-color: #B22222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+
+.profile-info {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.profile-info h2 {
+    color: #1D3555;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin: 12px 0;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0 30px;
+    direction: rtl;
+}
+.page-number{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.page.btn,
+.page.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1D3555;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.page-number.active{
+    background-color: #B22222;
+    color: white;
+    border: #B22222;
+}
+
+
+
+/* دکمه‌های صفحه قبل و بعد */
+.pagination .page-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    min-width: 115px;
+    background-color: #1D3555;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    transition: 0.2s ease;
+}
+
+.pagination .page-btn:hover {
+    background-color: #B22222;
+    transform: translateY(-2px);
+}
+
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.article:hover .article-image img {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
